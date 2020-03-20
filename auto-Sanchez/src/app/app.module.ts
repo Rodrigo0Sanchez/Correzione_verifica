@@ -11,7 +11,8 @@ import { DrivingListComponent } from './driving-list/driving-list.component';
     DrivingListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -20,10 +20,12 @@ export class DrivingListComponent implements OnInit {
 
       (auto : Drive[]) =>{
 
-        this.driveList = auto
+        this.driveList = auto;
+
       }
 
-    )
+    );
   }
 
 }
+
