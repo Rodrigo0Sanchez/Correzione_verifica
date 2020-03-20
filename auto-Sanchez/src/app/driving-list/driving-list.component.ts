@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Drive } from '../driving.model';
+
 @Component({
   selector: 'app-driving-list',
   templateUrl: './driving-list.component.html',
@@ -9,6 +10,7 @@ import { Drive } from '../driving.model';
 export class DrivingListComponent implements OnInit {
 
   driveList : Drive[] =new Array<Drive>();
+  selectedCar : Drive;
 
   constructor(public http : HttpClient) {
 
@@ -29,9 +31,12 @@ export class DrivingListComponent implements OnInit {
 
   onNoleggia( auto : Drive) : boolean {
     console.log(auto)
+    this.selectedCar = auto;
     return false;
 
   }
+
+
 
 }
 

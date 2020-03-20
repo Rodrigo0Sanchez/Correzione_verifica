@@ -1,3 +1,4 @@
 <ul>
   <li *ngFor ="let drive of driveList"><button (click)= "onNoleggia(drive)">Noleggia</button>{{drive.tipo}} | {{drive.tariffa}}</li>
 </ul>
+<app-rented [drive] = "selectedCar" ></app-rented>
