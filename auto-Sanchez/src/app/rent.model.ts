@@ -3,12 +3,12 @@ import { Drive } from './driving.model';
 export class Rent{
 
   drive : Drive;
-  n : number;
+  n_rent : number;
 
-  constructor(drive : Drive , n : number ){
+  constructor(drive : Drive , n_rent : number ){
 
     this.drive = drive ;
-    this.n = n ;
+    this.n_rent = n_rent ;
 
   }
 

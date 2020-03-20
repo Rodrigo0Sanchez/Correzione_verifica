@@ -7,6 +7,6 @@ import { Rent } from './rent.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  rentList : Rent[] =  new Array <Rent>();
+  rentList : Rent[] =  new Array<Rent>();
   title = 'auto-Sanchez';
 }
