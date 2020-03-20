@@ -28,7 +28,7 @@ export class DrivingListComponent implements OnInit {
   }
 
   onNoleggia( auto : Drive) : boolean {
-
+    console.log(auto)
     return false;
 
   }
